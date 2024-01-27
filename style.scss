@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #333;
+}
+// :root {
+// 	--main-color: gold;
+// 	--second-color: lime;
+// 	--third-color: royalblue;
+// }
+// $super-color: rgb(236, 223, 233);
+
+// .wrapper {
+// 	margin: 0 auto;
+// 	height: 100%;
+// 	max-width: 1200px;
+// }
+// .line p:nth-child(odd) {
+// 	color: rgb(13, 84, 84);
+// 	background-color: #fff;
+// }
+// .line p:nth-child(even) {
+// 	color: rgb(31, 41, 41);
+// 	background-color: #ce1d1d;
+// }
+// .line::before {
+// 	content: "Hello ";
+// 	font-size: 22px;
+// 	color: #fff;
+// }
+// .line::after {
+// 	content: "Hello";
+// 	font-size: 22px;
+// 	color: #eed8d8;
+// }
+// @keyframes move {
+// 	0% {
+// 		transform: rotate(0deg);
+// 		width: 200px;
+// 		height: 200px;
+// 	}
+// 	50% {
+// 		transform: rotate(180deg);
+// 		width: 230px;
+// 		height: 230px;
+// 	}
+// 	100% {
+// 		transform: rotate(0deg);
+// 		width: 200px;
+// 		height: 200px;
+// 	}
+// }
+.cards {
+	display: flex;
+	width: 1000px;
+}
+.card {
+	position: relative;
+	margin: 10px;
+	height: 600px;
+	width: 50%;
+	text-align: center;
+	background-position: center;
+	background-size: cover;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.691);
+	overflow: hidden;
+}
+
+.one {
+	background-image: url(./img/lake-lugano-8363426_1920.jpg);
+}
+.two {
+	background-image: url(./img/lake-lugano-8363426_1920.jpg);
+}
+
+button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 10px;
+	background: none;
+	border: none;
+	color: aliceblue;
+	text-shadow: 2 2 5 rgb(0, 0, 0);
+	cursor: pointer;
+	z-index: 10;
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 80px 30px;
+	background-color: rgba(0, 0, 0, 0.842);
+	color: aliceblue;
+	clip-path: circle(0% at 91% 5%);
+	transition: .8s;
+}
+button:hover ~.text {
+	clip-path: circle(135% at 94% 4%);
+}
+h1 {
+	color: goldenrod;
+}
+h2 {
+	margin-bottom: 30px;
+	color: silver;
+}
+.fa-solid {
+	font-size: 22px;
+	color: #333;
+}
